@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template name="Services" id="page_services" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>
+                            Services from template
+                        </h1>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+
+        <!-- === Services Page === -->
+        <template name="Services page" id="website.services" page="True">
+            <t t-call="website.layout">
+   <div id="wrap">
+     <div class="container">
+       <h1>Our Services</h1>
+       <ul class="services">
+         <li>Cloud Hostingsssssss</li>
+         <li>Support</li>
+         <li>Unlimited space</li>
+         <li>Unlimited space</li>
+       </ul>
+       <!-- === Snippets' area === -->
+       <div class="oe_structure" />
+     </div>
+   </div>
+  </t>
+        </template>
+
+<record id="services_page_link" model="website.menu">
+  <field name="name">Servicessss</field>
+  <field name="url">/page/services</field>
+  <field name="parent_id" ref="website.main_menu" />
+  <field name="sequence" type="int">99</field>
+</record>
+
+    </data>
+</openerp>
